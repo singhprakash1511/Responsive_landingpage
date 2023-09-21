@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #dadada;
+    padding: 0 5vw;
+    text-transform: uppercase;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.nav h4{
+    font-size: 1vw;
+    font-weight: 550;
+}
+
+.nav button{
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #365B64;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav i{
+    font-size: 1.6vw;
+    font-weight: 700;
+    display: none;
+}
+
+.home{
+    width: 100%;
+    height: calc(100% - 100px);
+    position: relative;
+    display: flex;
+}
+
+.leftside{
+    width: 55%;
+    height: 100%;
+    padding: 7vh 5vw;
+}
+
+.leftside h3{
+    font-size: 6vw;
+}
+
+span{
+    color: #FF735C;
+}
+
+.leftside h2{
+    font-size: 7vw;
+    font-weight: 700;
+    color: #FF735C;
+}
+
+p{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.leftside p{
+    padding: 0 1vw;
+    text-align: start;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+    color: #888;
+}
+
+.leftside button{
+    padding: 1.1vw 2.1vw;
+    font-size: 1.2vw;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 3vw;
+    background-color: #365B64;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.rightside{
+    width: 45%;
+    height: 100%;
+}
+
+.rightside img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:600px) {
+    .nav{
+        height: 60px;
+        padding: 0 6vw;
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .nav h2{
+        font-size: 6vw;
+    }
+
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+
+    .nav i{
+        font-size: 6vw;
+        display: contents;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 60px);
+    }
+
+    .home h3{
+        font-size: 8vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+    }
+
+    .home h2{
+        font-size: 10vw;
+    }
+
+    .home p{
+        font-size: 5vw;
+        width: 90%;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .leftside button{
+        padding: 3.1vw 2.1vw;
+        font-size: 6vw;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        background-color: #365B64;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .leftside{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .rightside{
+        height: 50%;
+        width: 100%;
+    }
+}
